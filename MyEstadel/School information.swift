@@ -44,26 +44,32 @@ struct School_information: View {
                         VStack(alignment: .leading){
                             CustomTextView(iconName: "person.circle", text: "Each class has 20-30 students ")
                                 .padding(.bottom)
+                                .padding(.horizontal)
+
                             
                             CustomTextView(iconName: "dollarsign.circle", text: "200-$ ")
                                 .padding(.bottom)
+                                .padding(.horizontal)
+
+                            
                             CustomTitle(title: "Account Information")
                             
                             
                             CustomTextView(iconName: "person.circle", text: "ABC international school")
+                                .padding(.horizontal)
                             Divider()
+                            
                             CustomTextView(iconName: "envelope", text: "ABC@info.edu.sa")
-                            
+                                .padding(.horizontal)
                             Divider()
+                            
                             CustomTextView(iconName: "phone", text: "+966 555-333-234")
-                            
+                                .padding(.horizontal)
                             Divider()
                             
-                            CustomTitle(title: "Facility")
-                                .padding(.top)
-                            
-                            
-                        }.padding()
+
+
+                        }
                         
                         
                         
@@ -71,6 +77,8 @@ struct School_information: View {
                     
                     // MARK: -
                     //اسويها اري افضل عشان اختصر الكود
+                    CustomTitle(title: "Facility")
+                        .padding(.top)
                     Group{
                         HStack(spacing: 24){
                             CustomShape(iconName: "bus.fill",
@@ -101,8 +109,11 @@ struct School_information: View {
                             NavigationLink (destination: Schoolphoto(), label: {
                                 Text("See All")
                                     .foregroundColor(Color("Mandarin"))
+                                    .padding()
                             })
                         }
+                    }
+                    
                         // MARK: -
                         //اسويها اري افضل عشان اختصر الكود
                         HStack{
@@ -112,13 +123,12 @@ struct School_information: View {
                             CustomImage(imageNo: "4")
                             
                         }
-                        CustomTitle(title: "Location Map")
-                            .padding(.top)
+
                         
-                        
-                    }.padding(.horizontal)
+                    .padding(.horizontal)
                     
-                    
+                    CustomTitle(title: "Location Map")
+                        .padding(.top)
                     
                     ZStack(alignment: .bottom) {
                         Map(coordinateRegion: $locationManager.region, showsUserLocation: true)
@@ -161,11 +171,13 @@ struct School_information: View {
                 .toolbar {
                     // 1
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        
-                        Button("Setting") {
-                            
+                        NavigationLink(destination: Sitting()) {
+                            Text("Setting")
+                                .padding()
+                                .navigationTitle("Hi")
+                                .toolbar{
+                                }
                         }
-                        Sitting()
                     }
                     // 2
                     ToolbarItem(placement: .navigationBarLeading) {

@@ -20,6 +20,8 @@
 		ADD49842299D28B2005D3D36 /* OnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4983E299D28B2005D3D36 /* OnbordingView.swift */; };
 		ADD49843299D28B2005D3D36 /* LoadingViewBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4983F299D28B2005D3D36 /* LoadingViewBG.swift */; };
 		ADD49844299D28B2005D3D36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49840299D28B2005D3D36 /* LoadingView.swift */; };
+		ADD49846299D722C005D3D36 /* UploadAnImage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49845299D722C005D3D36 /* UploadAnImage1.swift */; };
+		ADD49848299D7245005D3D36 /* UploadAnImage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49847299D7245005D3D36 /* UploadAnImage3.swift */; };
 		E2218C65298E994D002D34B2 /* MyEstadelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C64298E994D002D34B2 /* MyEstadelApp.swift */; };
 		E2218C67298E994D002D34B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C66298E994D002D34B2 /* ContentView.swift */; };
 		E2218C69298E994E002D34B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2218C68298E994E002D34B2 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		ADD4983E299D28B2005D3D36 /* OnbordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnbordingView.swift; sourceTree = "<group>"; };
 		ADD4983F299D28B2005D3D36 /* LoadingViewBG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewBG.swift; sourceTree = "<group>"; };
 		ADD49840299D28B2005D3D36 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		ADD49845299D722C005D3D36 /* UploadAnImage1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadAnImage1.swift; sourceTree = "<group>"; };
+		ADD49847299D7245005D3D36 /* UploadAnImage3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadAnImage3.swift; sourceTree = "<group>"; };
 		E2218C61298E994D002D34B2 /* MyEstadel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyEstadel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2218C64298E994D002D34B2 /* MyEstadelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEstadelApp.swift; sourceTree = "<group>"; };
 		E2218C66298E994D002D34B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				ADD49827299CF72B005D3D36 /* CustomInputField.swift */,
 				ADD49836299D27DE005D3D36 /* ImagePicker.swift */,
 				ADD49837299D27DE005D3D36 /* UploadAnImage.swift */,
+				ADD49845299D722C005D3D36 /* UploadAnImage1.swift */,
+				ADD49847299D7245005D3D36 /* UploadAnImage3.swift */,
 				E2218C82299180C8002D34B2 /* LocationManager.swift */,
 				E2218C8029917A86002D34B2 /* Schoolphoto.swift */,
 				E2218C76298EBAFA002D34B2 /* SittingCell.swift */,
@@ -245,6 +251,8 @@
 				E2218C8129917A86002D34B2 /* Schoolphoto.swift in Sources */,
 				E2218C79298ECBFE002D34B2 /* Nav.swift in Sources */,
 				ADD49839299D27DE005D3D36 /* ImagePicker.swift in Sources */,
+				ADD49846299D722C005D3D36 /* UploadAnImage1.swift in Sources */,
+				ADD49848299D7245005D3D36 /* UploadAnImage3.swift in Sources */,
 				E2218C87299393E4002D34B2 /* Login.swift in Sources */,
 				E2218C83299180C8002D34B2 /* LocationManager.swift in Sources */,
 			);

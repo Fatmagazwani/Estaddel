@@ -11,10 +11,14 @@ struct CustomTitle: View {
     let title: String
 
     var body: some View {
-        VStack(alignment: .leading){
+        
+        HStack{
             Text(title)
                 .font(.system(size: 20, weight: .bold))
                 .padding(.bottom)
+                .padding(.leading)
+
+            Spacer()
 
         }
         

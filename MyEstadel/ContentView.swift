@@ -7,16 +7,16 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
-    @State private var isTapped = false
-    @State private var name: String = ""
+
     var body: some View {
-        HStack {
-            Image(systemName: "person.circle")
+       
+         
+Text("Here gose the map")
         }
-    
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
