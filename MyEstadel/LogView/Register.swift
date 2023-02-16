@@ -12,6 +12,9 @@ struct Register: View {
     @State private var name: String = ""
     @State private var mail: String = ""
     @State private var password: String = ""
+    @State private var checked = false
+
+
     
     var body: some View {
         NavigationView{
@@ -44,6 +47,16 @@ struct Register: View {
                 } .foregroundColor(Color("Mandarin"))
                     .padding(.trailing, 200.0)
                 
+                HStack{
+                    Toggle(isOn: $checked) {
+                        Text("Agree to our Privacy Policy")
+                    }
+                    .toggleStyle(CheckboxStyle())
+                    .padding(.horizontal)
+                    Spacer()
+                }
+                
+                
                 // MARK: - Register
                 Button("Register") {
                    
@@ -55,6 +68,8 @@ struct Register: View {
                 .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 
                 // MARK: - If did'nt have any account
+                
+                
                 HStack{
                     Text("Already have an account ?")
                     Button("Login"){
@@ -71,6 +86,7 @@ struct Register: View {
                 }
             }
            .padding(.bottom)
+            
            
 
         }
@@ -82,5 +98,22 @@ struct Register: View {
 struct Register_Previews: PreviewProvider {
     static var previews: some View {
         Register()
+    }
+}
+
+struct CheckboxStyle: ToggleStyle {
+
+    func makeBody(configuration: Self.Configuration) -> some View {
+
+        return HStack {
+            Image(systemName: configuration.isOn ? "checkmark.square" : "square")
+                .resizable()
+                .frame(width: 24, height: 24)
+                .foregroundColor(configuration.isOn ? .blue : .gray)
+                .font(.system(size: 20, weight: .regular, design: .default))
+                configuration.label
+        }
+        .onTapGesture { configuration.isOn.toggle() }
+
     }
 }

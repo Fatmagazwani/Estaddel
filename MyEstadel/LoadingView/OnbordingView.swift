@@ -15,11 +15,11 @@ enum OnbordingType: CaseIterable {
     var image: String {
         switch self {
         case .track:
-            return "1"
+            return "ob1"
         case .notified:
-            return "2"
+            return "ob2"
         case .accessibility:
-            return "3"
+            return "ob3"
         }
     }
     

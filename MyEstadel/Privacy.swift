@@ -45,7 +45,7 @@ struct Privacy: View {
                      Contact Us
                      Please email us at any of our socials with any questions.
                      """)
-
+                .frame(width: 320)
                 .foregroundColor(.black)
                 .font(.body)
                .padding()

@@ -28,7 +28,6 @@
 		E2218C6C298E994E002D34B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2218C6B298E994E002D34B2 /* Preview Assets.xcassets */; };
 		E2218C75298E9E16002D34B2 /* Sitting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C74298E9E16002D34B2 /* Sitting.swift */; };
 		E2218C77298EBAFA002D34B2 /* SittingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C76298EBAFA002D34B2 /* SittingCell.swift */; };
-		E2218C79298ECBFE002D34B2 /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C78298ECBFE002D34B2 /* Nav.swift */; };
 		E2218C7D2990F6AA002D34B2 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C7C2990F6AA002D34B2 /* Privacy.swift */; };
 		E2218C7F2990FD14002D34B2 /* School information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C7E2990FD14002D34B2 /* School information.swift */; };
 		E2218C8129917A86002D34B2 /* Schoolphoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C8029917A86002D34B2 /* Schoolphoto.swift */; };
@@ -61,7 +60,6 @@
 		E2218C6B298E994E002D34B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2218C74298E9E16002D34B2 /* Sitting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sitting.swift; sourceTree = "<group>"; };
 		E2218C76298EBAFA002D34B2 /* SittingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SittingCell.swift; sourceTree = "<group>"; };
-		E2218C78298ECBFE002D34B2 /* Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav.swift; sourceTree = "<group>"; };
 		E2218C7C2990F6AA002D34B2 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		E2218C7E2990FD14002D34B2 /* School information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "School information.swift"; sourceTree = "<group>"; };
 		E2218C8029917A86002D34B2 /* Schoolphoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schoolphoto.swift; sourceTree = "<group>"; };
@@ -113,6 +111,15 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
+		ADD49849299E0756005D3D36 /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				E2218C86299393E4002D34B2 /* Login.swift */,
+				E2218C8829941AFE002D34B2 /* Register.swift */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
 		E2218C58298E994D002D34B2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,14 +141,12 @@
 			children = (
 				E2218C64298E994D002D34B2 /* MyEstadelApp.swift */,
 				E2218C66298E994D002D34B2 /* ContentView.swift */,
-				E2218C86299393E4002D34B2 /* Login.swift */,
-				E2218C8829941AFE002D34B2 /* Register.swift */,
 				ADD49835299D27DE005D3D36 /* showEditProfile.swift */,
 				E2218C7E2990FD14002D34B2 /* School information.swift */,
 				E2218C74298E9E16002D34B2 /* Sitting.swift */,
 				E2218C7C2990F6AA002D34B2 /* Privacy.swift */,
-				E2218C78298ECBFE002D34B2 /* Nav.swift */,
 				E2218C8429918DB8002D34B2 /* SettingsView.swift */,
+				ADD49849299E0756005D3D36 /* LogView */,
 				ADD4983C299D28B2005D3D36 /* LoadingView */,
 				ADD4983B299D27E6005D3D36 /* Compennents */,
 				E2218C68298E994E002D34B2 /* Assets.xcassets */,
@@ -249,7 +254,6 @@
 				ADD49844299D28B2005D3D36 /* LoadingView.swift in Sources */,
 				ADD4982F299D1E9B005D3D36 /* CustomTitle.swift in Sources */,
 				E2218C8129917A86002D34B2 /* Schoolphoto.swift in Sources */,
-				E2218C79298ECBFE002D34B2 /* Nav.swift in Sources */,
 				ADD49839299D27DE005D3D36 /* ImagePicker.swift in Sources */,
 				ADD49846299D722C005D3D36 /* UploadAnImage1.swift in Sources */,
 				ADD49848299D7245005D3D36 /* UploadAnImage3.swift in Sources */,
@@ -397,9 +401,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MyEstadel.MyEstadel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -425,9 +432,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MyEstadel.MyEstadel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -12,7 +12,7 @@ struct MyEstadelApp: App {
     var body: some Scene {
         WindowGroup {
 
-            Register()
+            passwordView()
         }
     }
 }
