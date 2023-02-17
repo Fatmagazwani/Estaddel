@@ -35,6 +35,7 @@
 		E2218C8529918DB8002D34B2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C8429918DB8002D34B2 /* SettingsView.swift */; };
 		E2218C87299393E4002D34B2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C86299393E4002D34B2 /* Login.swift */; };
 		E2218C8929941AFE002D34B2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2218C8829941AFE002D34B2 /* Register.swift */; };
+		E831903C299E95EC003EFCCD /* UploadAnImage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E831903B299E95EC003EFCCD /* UploadAnImage4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		E2218C8429918DB8002D34B2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E2218C86299393E4002D34B2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		E2218C8829941AFE002D34B2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		E831903B299E95EC003EFCCD /* UploadAnImage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadAnImage4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				ADD49837299D27DE005D3D36 /* UploadAnImage.swift */,
 				ADD49845299D722C005D3D36 /* UploadAnImage1.swift */,
 				ADD49847299D7245005D3D36 /* UploadAnImage3.swift */,
+				E831903B299E95EC003EFCCD /* UploadAnImage4.swift */,
 				E2218C82299180C8002D34B2 /* LocationManager.swift */,
 				E2218C8029917A86002D34B2 /* Schoolphoto.swift */,
 				E2218C76298EBAFA002D34B2 /* SittingCell.swift */,
@@ -257,6 +260,7 @@
 				ADD49839299D27DE005D3D36 /* ImagePicker.swift in Sources */,
 				ADD49846299D722C005D3D36 /* UploadAnImage1.swift in Sources */,
 				ADD49848299D7245005D3D36 /* UploadAnImage3.swift in Sources */,
+				E831903C299E95EC003EFCCD /* UploadAnImage4.swift in Sources */,
 				E2218C87299393E4002D34B2 /* Login.swift in Sources */,
 				E2218C83299180C8002D34B2 /* LocationManager.swift in Sources */,
 			);

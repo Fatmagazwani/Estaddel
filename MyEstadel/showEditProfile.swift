@@ -101,7 +101,8 @@ struct showEditProfile: View {
 
                 HStack{
 
-                    UploadAnImage3()
+//                    UploadAnImage3()
+                    UploadAnImage4()
 
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height:150)
