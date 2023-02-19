@@ -13,6 +13,8 @@ struct Register: View {
     @State private var mail: String = ""
     @State private var password: String = ""
     @State private var checked = false
+    @State private var checked2 = false
+
 
 
     
@@ -41,12 +43,18 @@ struct Register: View {
                 passwordView()
 
                 
-                // MARK: - Button Didn't complete
-                Button("Remember me?"){
-                    
-                } .foregroundColor(Color("Mandarin"))
-                    .padding(.trailing, 200.0)
-                
+                // MARK: - Remember
+               
+                HStack{
+                    Toggle(isOn: $checked2) {
+                        Text("Remember me?")
+//                            .foregroundColor(Color("Mandarin"))
+                    }
+                    .toggleStyle(CheckboxStyle())
+                    .padding(.horizontal)
+                    Spacer()
+                }
+                // MARK: - Agree
                 HStack{
                     Toggle(isOn: $checked) {
                         Text("Agree to our Privacy Policy")
@@ -67,8 +75,7 @@ struct Register: View {
                 .background(Color("Sage"))
                 .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 
-                // MARK: - If did'nt have any account
-                
+                // MARK: - If Already have an account
                 
                 HStack{
                     Text("Already have an account ?")
@@ -77,6 +84,8 @@ struct Register: View {
                     }.foregroundColor(Color("Mandarin"))
 
                 }
+                // MARK: - Toolbar
+                
                 .toolbar{
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Button("Back") {

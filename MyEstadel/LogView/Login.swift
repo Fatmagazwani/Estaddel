@@ -40,23 +40,24 @@ struct Login: View {
                 .padding(.trailing, 200.0)
             
             
-            // MARK: - Login Button
-            NavigationLink (destination: School_information(), label: {
-                
-                Text("Login")
-                
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 358, height: 48)
-                    .background(Color("Sage"))
-                    .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                
-                
-            })
+//            // MARK: - Login Button
+//            NavigationLink (destination: School_information(), label: {
+//
+//                Text("Login")
+//
+//                    .font(.headline)
+//                    .foregroundColor(.white)
+//                    .frame(width: 358, height: 48)
+//                    .background(Color("Sage"))
+//                    .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
+//
+//
+//            })
+            //MARK: - Login Button
             Button {
-                School_information()
+          //   School_information()
             } label: {
-                Text("log")
+                Text("login")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(width: 358, height: 48)
@@ -65,14 +66,7 @@ struct Login: View {
                     
             }
             
-            //                Button("Login") {
-            //                    School_information()
-            //                }
-            //                .font(.headline)
-            //                .foregroundColor(.white)
-            //                .frame(width: 358, height: 48)
-            //                .background(Color("Sage"))
-            //                .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                        
             // MARK: - if you Don’t have an account
             
             HStack{
@@ -95,6 +89,7 @@ struct Login: View {
                     Button("Back") {
                         
                     }
+                    
                 }
             }
         }.padding(.bottom)
