@@ -19,6 +19,8 @@ struct School_information: View {
                 
                 VStack{
                     VStack{
+                        // MARK: - Image
+                        
                         Image("A")
                             .resizable()
                             .frame(width: 150, height: 150)
@@ -26,43 +28,55 @@ struct School_information: View {
                             .overlay(Circle()
                                 .stroke(Color.gray))
                             .padding(.bottom)
+                        // MARK: - Name of School
+                        
                         Text("ABC international school")
                             .font(.system(size: 17, weight: .semibold)).foregroundColor(Color("Sage"))
+                        // MARK: - City of School
+
                         Text("Riyadh")
                             .font(.system(size: 17, weight: .regular)).foregroundColor(Color("Mandarin"))
                         
                     }
                     
-                    //The schools in Riyadh were...
+                    // MARK: - Descriation
+                    
                     Text("The schools in Riyadh were established in 2018 as an educational institution from pre-school to grade twelfth, the schools are still continuing on the pace of development and expansion for the coming years.").font(.system(size: 17, weight: .regular)).foregroundColor(.black)
                     
                     
                         .padding()
-                    // MARK: -
-                    //
+                    
                     Group{
                         VStack(alignment: .leading){
+                            // MARK: - Students in class
+
                             CustomTextView(iconName: "person.circle", text: "Each class has 20-30 students ")
                                 .padding(.bottom)
                                 .padding(.horizontal)
 
-                            
+                            // MARK: - Students in class
+
                             CustomTextView(iconName: "dollarsign.circle", text: "200-$ ")
                                 .padding(.bottom)
                                 .padding(.horizontal)
 
+                            // MARK: - Information
+                            CustomTitle(title: "Contact Information")
                             
-                            CustomTitle(title: "Account Information")
-                            
-                            
+                            // MARK: - Name of School
+
                             CustomTextView(iconName: "person.circle", text: "ABC international school")
                                 .padding(.horizontal)
                             Divider()
                             
+                            // MARK: - Email of School
+
                             CustomTextView(iconName: "envelope", text: "ABC@info.edu.sa")
                                 .padding(.horizontal)
                             Divider()
                             
+                            // MARK: - Number of School
+
                             CustomTextView(iconName: "phone", text: "+966 555-333-234")
                                 .padding(.horizontal)
                             Divider()
@@ -75,24 +89,26 @@ struct School_information: View {
                         
                     }
                     
-                    // MARK: -
-                    //اسويها اري افضل عشان اختصر الكود
+                    // MARK: - Facility
+
                     CustomTitle(title: "Facility")
                         .padding(.top)
                     Group{
                         HStack(spacing: 24){
+                            // MARK: - Transport
+                            
                             CustomShape(iconName: "bus.fill",
                                         iconText: "Transport",
                                         iconColor: "Sage")
-                            
+                            // MARK: - Smart
                             CustomShape(iconName: "desktopcomputer",
                                         iconText: "Smart",
                                         iconColor: "Mandarin")
-                            
+                            // MARK: - Pool
                             CustomShape(iconName: "figure.pool.swim",
                                         iconText: "Pool",
                                         iconColor: "Sage")
-                            
+                            // MARK: - Complex
                             CustomShape(iconName: "building.2",
                                         iconText: "Complex",
                                         iconColor: "Mandarin")
@@ -114,8 +130,8 @@ struct School_information: View {
                         }
                     }
                     
-                        // MARK: -
-                        //اسويها اري افضل عشان اختصر الكود
+                    // MARK: - Photos with NavigationLink
+                   
                         HStack{
                             CustomImage(imageNo: "0")
                             CustomImage(imageNo: "2")
@@ -127,6 +143,7 @@ struct School_information: View {
                         
                     .padding(.horizontal)
                     
+                    // MARK: - Map
                     CustomTitle(title: "Location Map")
                         .padding(.top)
                     
@@ -162,14 +179,15 @@ struct School_information: View {
                     
                 }
                 .padding(.bottom)
-                //✏️ Title
+                // MARK: - Header
+                
                 .navigationTitle("School information")
                 
                 //لازم اسويها ربط بين الصفحات وصفحة وهيمه عشان اربطها فيها
                 
                 // MARK: - Toolbar
                 .toolbar {
-                    // 1
+                    // MARK: - 1
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: Sitting()) {
                             Text("Setting")
@@ -179,7 +197,7 @@ struct School_information: View {
                                 }
                         }
                     }
-                    // 2
+                    // MARK: - 2
                     ToolbarItem(placement: .navigationBarLeading) {
                         
                         Button("Back") {

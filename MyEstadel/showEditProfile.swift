@@ -10,6 +10,7 @@ import CoreLocationUI
 import MapKit
 
 struct showEditProfile: View {
+    
     @State private var name: String = ""
     @StateObject var locationManager = LocationManager()
     @State private var SchoolName: String = ""
